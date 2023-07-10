@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Opciones para reducir el estrés</title>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+
+      h1 {
+        color: #ffffff;
+        background-color: #4CAF50;
+        padding: 10px 20px;
+        border-radius: 10px;
+        display: inline-block;
+      }
+
+      .options-container {
+        margin: 50px auto;
+        max-width: 400px;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .option-item {
+        margin-bottom: 10px;
+        text-align: left;
+      }
+
+      button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+
+      .countdown-container {
+        margin-top: 50px;
+        font-size: 2rem;
+        color: #333333;
+        font-weight: bold;
+        border: 2px solid #4CAF50;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .exercise-options {
+        display: none;
+      }
+
+      .exercise-options label {
+        display: block;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Opciones para reducir el estres</h1>
+    <div class="image-container">
+      <img src="https://m.media-amazon.com/images/I/51r34OD6lFL.jpg" alt="Imagen relacionada con reducción de estrés" />
+    </div>
+    <div class="options-container">
+      <div class="option-item">
+        <label for="opcion">Elige una opcion:</label>
+        <select id="opcion" onchange="mostrarOpcionesEjercicio()">
+          <option value="">Seleccione...</option>
+          <option value="1">Dormir</option>
+          <option value="2">Meditacion</option>
+          <option value="3">Escuchar musica relajante</option>
+          <option value="4">Realizar ejercicio fisico</option>
+          <option value="5">Escribir un diario</option>
+          <option value="6">Salir a caminar en la naturaleza</option>
+          <option value="7">Tomar un bano relajante</option>
+          <option value="8">Hacer yoga</option>
+          <option value="9">Leer un libro</option>
+          <option value="10">Ver una pelicula divertida</option>
+        </select>
+      </div>
+      <div class="option-item exercise-options">
+        <label for="ejercicio-opcion">Opciones de ejercicio:</label>
+        <select id="ejercicio-opcion">
+          <option value="">Seleccione...</option>
+          <option value="gimnasio">Ir al gimnasio</option>
+          <option value="bicicleta">Montar bicicleta</option>
+          <option value="basket">Jugar baloncesto</option>
+          <option value="natacion">Natacion</option>
+        </select>
+      </div>
+      <div class="option-item">
+        <button onclick="ejecutarOpcion()">Ejecutar opcion</button>
+      </div>
+    </div>
+    <div class="countdown-container">
+      <span id="countdown">00:00</span>
+    </div>
+    <div id="poses-yoga" class="option-item exercise-poses" style="display: none;">
+      <label>Poses de yoga:</label>
+      <nav>
+        <ul>
+          <li><a href="https://www.youtube.com/watch?v=Y8UNFem5qHc" target="_blank">Pose de la cobra</a></li>
+    <li><a href="https://www.youtube.com/watch?v=Mc6D2OrMTX0" target="_blank">Pose del cuervo</a></li>
+    <li><a href="https://www.youtube.com/watch?v=qDtXGtt6_HE" target="_blank">Pose del gran angulo</a></li>
+    <li><a href="https://www.youtube.com/watch?v=csErxVR7dpA" target="_blank">Pose de la media luna</a></li>
+  </ul>
+      </nav>
+    </div>
+       
+    <script src="script.js"></script>
+  </body>
+</html>
